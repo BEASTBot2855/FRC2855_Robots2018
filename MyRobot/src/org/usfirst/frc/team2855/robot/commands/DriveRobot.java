@@ -30,14 +30,14 @@ public class DriveRobot extends Command {
 //			robotDrive.driveRobot(leftJ.getY(Hand.kLeft) * -leftJ.getZ(), rightJ.getY(Hand.kRight) * -leftJ.getZ());
 //		}
 		
-		robotDrive.driveRobot(xboxJ.getY() * 0.5, xboxJ.getRawAxis(3) * 0.5);
+//		robotDrive.driveRobot(xboxJ.getY(), xboxJ.getRawAxis(3));
 		
-//	robotDrive.driveRobot(-leftJ.getY(), -rightJ.getY());
+	robotDrive.driveRobot(leftJ.getY(), rightJ.getY());
 		
 //		if ((xboxJ.getY() > 0.0 && xboxJ.getRawAxis(3) < 0.0) || (xboxJ.getY() < 0.0 && xboxJ.getRawAxis(3) > 0.0)) {
-//			robotDrive.driveRobot(-xboxJ.getY() * 0.75, -xboxJ.getRawAxis(3) * 0.75);
+//			robotDrive.driveRobot(-xboxJ.getY() * -0.85, -xboxJ.getRawAxis(3) * -0.85);
 //		} else {
-//			robotDrive.driveRobot(-xboxJ.getY() * 0.5, -xboxJ.getRawAxis(3) * 0.5);
+//			robotDrive.driveRobot(-xboxJ.getY() * -0.5, -xboxJ.getRawAxis(3) * -0.5);
 //		}
 	}
 	
